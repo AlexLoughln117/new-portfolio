@@ -15,7 +15,7 @@ export default function HomePage() {
         {/* Use classNames for styling elements */}
         <div className={styles.articleIntro}>
           <div className={styles.homeIntro}>
-            <h2>Hi, I'm Alex Loughlin</h2>
+            <h2>Hi, I&apos;m Alex Loughlin</h2>
             <h3>
               A web developer with experience in building well designed,
               beautiful and forward-thinking websites. I have worked with
