@@ -1,0 +1,35 @@
+/* src/app/category/work/page.module.css */ /* <-- Note the updated path */
+
+.workContainer {
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .workHeading {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* ... (rest of the CSS rules from the previous answer remain the same) ... */
+  
+  .projectCard { /* Example rule */
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1 / 0.7;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add all other .projectCard, .projectImage, .projectOverlay, .projectInfo rules here */
