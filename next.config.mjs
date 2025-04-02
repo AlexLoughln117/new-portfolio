@@ -1,17 +1,11 @@
-// next.config.js - Simplified for use with actions/configure-pages
+// next.config.mjs (Correct ES Module syntax)
 
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
-    // output: 'export', // <--- REMOVE or COMMENT OUT
-    // images: { // <--- REMOVE or COMMENT OUT this block if only for unoptimized
-    //   unoptimized: true,
-    // },
-    // basePath: '/your-repo-name', // <--- REMOVE or COMMENT OUT
-    // assetPrefix: '/your-repo-name/', // <--- REMOVE or COMMENT OUT
-  
     reactStrictMode: true,
-    // Keep any other unrelated configurations you need
+    // Keep any other unrelated configurations you need.
+    // Remember to keep export/basePath/image settings removed
+    // as the GitHub Action handles them automatically.
   };
   
-  module.exports = nextConfig;
+  export default nextConfig; // <-- Use 'export default' instead
