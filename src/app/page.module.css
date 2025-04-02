@@ -191,14 +191,13 @@ a.secondary {
   background-color: #21D4FD;
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
   min-height: 750px;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0;
   color: white;
-  cursor: pointer;
 }
 
 .articleIntro:hover {

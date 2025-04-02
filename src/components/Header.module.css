@@ -1,0 +1,87 @@
+/* src/components/Header.module.css */
+
+.header {
+    background-color: #fff; /* Or your desired background */
+    padding: 15px 0;
+    border-bottom: 1px solid #eee; /* Example border */
+    position: sticky; /* Make header stick on scroll */
+    top: 0;
+    z-index: 10; /* Ensure it's above other content */
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 0px solid #8EC5FC;
+  border-bottom: 0px solid;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 15px 0px;
+  background-color: #fff;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  }
+  
+  /* Use a container to manage width and centering */
+  .container {
+
+    padding: 0 15px; /* Padding on the sides */
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, nav right */
+    align-items: center; /* Vertically align items */
+    width: 100%;
+  }
+  
+  .logo a {
+    color: #000 !important;
+    font-weight: bolder !important;
+    font-size: 16px !important;
+    border: solid;
+      border-top-width: medium;
+      border-right-width: medium;
+      border-bottom-width: medium;
+      border-left-width: medium;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-radius: 1px;
+    border-width: 2.2px;
+    padding: 5px 40px;
+    align-content: left;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2);
+    top: 2%;
+    right: 30%;
+    -webkit-box-shadow: 7px 12px 0px 0px #000;
+    -moz-box-shadow: 7px 12px 0px 0px #000;
+    box-shadow: 3px 5px 0px 0px #000;
+    line-height: normal;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align nav items horizontally */
+    gap: 25px; /* Space between nav items */
+  }
+  
+  .nav li {
+    /* No specific styles needed for li usually */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #555; /* Nav link color */
+    font-size: 1em;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #000; /* Nav link hover color */
+  }
