@@ -126,40 +126,7 @@ a.secondary {
   }
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
 
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
 
 @media (prefers-color-scheme: dark) {
   .logo {
@@ -252,9 +219,50 @@ a.secondary {
   font-weight: bold;
   font-weight: normal;
   line-height: 1.22;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .socialLinks a:hover {
   text-decoration: underline; /* Remove underline on hover */
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    align-items: center;
+  }
+
+  .main ol {
+    text-align: center;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+
+  .ctas a {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+  }
+
+  a.secondary {
+    min-width: auto;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeIntro{
+    max-width: 100%;
+  }
+  .homeIntro h2{
+    font-size: 60px;
+  }
 }
