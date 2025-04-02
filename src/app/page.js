@@ -10,7 +10,7 @@ export default function HomePage() {
 
       {/* Wrap the entire clickable intro area with the Next.js Link component */}
       {/* The 'href' prop defines the destination URL */}
-      <Link href="/category/work" className={styles.introLinkWrapper}>
+      {/* <Link href="/category/work" className={styles.introLinkWrapper}> */}
 
         {/* Use classNames for styling elements */}
         <div className={styles.articleIntro}>
@@ -28,7 +28,7 @@ export default function HomePage() {
             </h3> */}
           </div>
         </div>
-      </Link>
+      {/* </Link> */}
 
       {/* You can add back other sections (like blog, books) here later */}
       {/* Example: */}
