@@ -1,11 +1,11 @@
-// next.config.mjs (Correct ES Module syntax)
-
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export', // Needed for static export
+    images: {
+      unoptimized: true, // Needed for static export / GH Pages
+    },
     reactStrictMode: true,
-    // Keep any other unrelated configurations you need.
-    // Remember to keep export/basePath/image settings removed
-    // as the GitHub Action handles them automatically.
+    // Ensure NO basePath or assetPrefix settings are present here!
   };
-  
-  export default nextConfig; // <-- Use 'export default' instead
+  export default nextConfig;
