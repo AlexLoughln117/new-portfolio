@@ -242,3 +242,20 @@ a.secondary {
 .homeIntroLink:hover{
   text-decoration: underline;
 }
+
+.socialLinks {
+  margin-top: 1rem; /* Add some space above the link */
+}
+
+.socialLinks a {
+  color: #fff; /* Customize the link color */
+  text-decoration: none; /* Add an underline */
+  font-weight: bold;
+  font-weight: normal;
+  line-height: 1.22;
+  font-size: 24px;
+}
+
+.socialLinks a:hover {
+  text-decoration: underline; /* Remove underline on hover */
+}
