@@ -18,7 +18,7 @@ export default function BlogIndexPage() {
   return (
     <>
       <PageBanner
-        title="My Blog"
+        title="Blog"
         subtitle="Thoughts, updates, and articles."
       />
 

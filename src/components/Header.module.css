@@ -69,19 +69,23 @@
     margin: 0;
     display: flex; /* Align nav items horizontally */
     gap: 25px; /* Space between nav items */
+    margin-right: 15px;
   }
   
   .nav li {
     /* No specific styles needed for li usually */
+
   }
   
   .nav a {
     text-decoration: none;
-    color: #555; /* Nav link color */
-    font-size: 1em;
+    color: #000; /* Nav link color */
+    font-size: 1rem;
     transition: color 0.2s ease;
+    /* font-weight: bold; */
   }
   
   .nav a:hover {
     color: #000; /* Nav link hover color */
+    text-decoration: underline;
   }

@@ -2,6 +2,7 @@ import Link from 'next/link';
 // Import the CSS module for styling this page.
 // Make sure you create this file: src/app/page.module.css
 import styles from './page.module.css';
+import RecentBlogs from '../components/RecentBlogs'; // Adjust path if needed
 
 export default function HomePage() {
   return (
@@ -34,6 +35,8 @@ export default function HomePage() {
           </div>
         </div>
       {/* </Link> */}
+
+      <RecentBlogs />
 
       {/* You can add back other sections (like blog, books) here later */}
       {/* Example: */}
