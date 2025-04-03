@@ -1,0 +1,112 @@
+/* src/app/blog/[slug]/page.module.css */
+
+.postContainer {
+    max-width: 800px; /* Adjust content width */
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+  
+  .postHeader {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .postTitle {
+    font-size: 2.5em; /* Large title */
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .postMeta {
+    font-size: 0.95em;
+    color: #555;
+  }
+  
+  .postMeta span {
+      margin-left: 5px;
+  }
+  
+  /* Styles for the main content rendered from MDX */
+  .postContent {
+    line-height: 1.7; /* Improve readability */
+    font-size: 1.1em; /* Slightly larger font for content */
+    color: #333;
+  }
+  
+  /* Basic styling for common elements within MDX content */
+  .postContent h2 {
+    font-size: 1.8em;
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+  }
+  
+  .postContent h3 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+  }
+  
+  .postContent p {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+  }
+  
+  .postContent a {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  .postContent a:hover {
+    color: #0056b3;
+  }
+  
+  
+  .postContent ul,
+  .postContent ol {
+    margin-bottom: 1.2em;
+    padding-left: 1.8em; /* Indent lists */
+  }
+  
+  .postContent li {
+    margin-bottom: 0.5em;
+  }
+  
+  .postContent blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em 1.5em;
+    border-left: 5px solid #eee;
+    background-color: #f9f9f9;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .postContent code {
+    background-color: #f0f0f0;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+  
+  .postContent pre {
+    background-color: #f5f5f5;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto; /* Handle long code lines */
+    font-size: 0.9em;
+  }
+  
+  .postContent pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit; /* Inherit size from pre */
+  }
+  
+  /* Add more styles as needed for images, tables, etc. */
+  
+  

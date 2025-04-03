@@ -1,16 +1,16 @@
 // src/app/layout.js
 
 import './globals.css';
-import Header from '../components/Header'; // <-- Import the Header
-import { Roboto } from 'next/font/google'; // <-- Import Roboto
+import Header from '../components/Header'; 
+import { Roboto } from 'next/font/google';
 
 // Configure Roboto
 const roboto = Roboto({
-  weight: ['400', '700'], // Specify weights you need (e.g., regular 400, bold 700)
-  style: ['normal', 'italic'], // Specify styles you need (optional)
-  subsets: ['latin'],        // Specify character subsets (usually 'latin')
-  display: 'swap',           // Optimal font display strategy
-  variable: '--font-roboto', // Define CSS variable name (optional but recommended)
+  weight: ['400', '700'],
+  style: ['normal', 'italic'], 
+  subsets: ['latin'],   
+  display: 'swap',         
+  variable: '--font-roboto', 
 });
 
 export const metadata = {
@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={roboto.variable}>
       <body>
-        <Header /> {/* <-- Add the Header component here */}
-        <main>{children}</main> {/* Optional: wrap children in <main> */}
+        <Header />
+        <main>{children}</main>
         {/* You could add a <Footer /> component here later */}
       </body>
     </html>

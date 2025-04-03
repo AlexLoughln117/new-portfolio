@@ -1,0 +1,107 @@
+/* src/app/blog/page.module.css */
+
+/* Container for the blog page content */
+.blogContainer {
+   
+  }
+  
+  /* Main heading style */
+  .blogContainer h1 {
+    margin-bottom: 10px; /* Space below H1 */
+    text-align: center;
+    font-size: 2.5em; /* Larger font size for main title */
+  }
+  
+  /* Paragraph style below H1 */
+  .blogContainer > p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1em;
+  }
+  
+  /* Container for the list of posts */
+  .postsList {
+    margin-top: 40px;
+    max-width: 800px; /* Limit content width for readability */
+    margin: 40px auto; /* Center container with top/bottom margin */
+    padding: 0 20px; /* Side padding */
+  }
+  
+  /* Individual post item styling */
+  .postItem {
+    border-bottom: 1px solid #e0e0e0; /* Lighter border */
+    padding-bottom: 40px; /* More space below post */
+    margin-bottom: 40px; /* More space between posts */
+  }
+  
+  /* Remove border from the last item */
+  .postItem:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  /* Featured image styling */
+  .featuredImage {
+      display: block; /* Ensure image behaves like a block */
+      max-width: 100%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Space below image */
+      border-radius: 8px; /* Slightly rounded corners */
+      background-color: #f0f0f0; /* Placeholder color */
+  }
+  
+  /* Post title styling */
+  .postTitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.9em; /* Slightly smaller than H1 */
+    line-height: 1.3;
+  }
+  
+  /* Ensure links within titles (if any) look okay */
+  .postTitle a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from h2 */
+  }
+  .postTitle a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Metadata styling (date) */
+  .postMeta {
+    font-size: 0.9em;
+    color: #666; /* Grey color for meta */
+    margin-bottom: 15px;
+  }
+  
+  /* Post excerpt container styling */
+  .postExcerpt {
+    line-height: 1.7; /* Improve readability */
+    color: #333; /* Standard text color */
+  }
+  
+  /* Style paragraphs within the excerpt (from WordPress HTML) */
+  .postExcerpt p {
+      margin-top: 0;
+      margin-bottom: 1em; /* Space between paragraphs in excerpt */
+  }
+  .postExcerpt p:last-child {
+      margin-bottom: 0;
+  }
+  
+  /* "Read More" link styling */
+  .readMore {
+    display: inline-block; 
+    margin-top: 20px; 
+    text-decoration: none;
+    font-weight: bold;
+    color: #000; 
+    transition: color 0.2s ease;
+  }
+  
+  .readMore:hover {
+    text-decoration: underline;
+  }
+  
