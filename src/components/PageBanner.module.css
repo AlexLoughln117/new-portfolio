@@ -54,6 +54,7 @@
   @media (max-width: 600px) {
     .bannerContainer{
         height: 400px;
+        padding: 40px 15px;
     }
     .bannerInner{
         margin-left: 0;

@@ -22,7 +22,7 @@ export default function HomePage() {
               beautiful and forward-thinking websites. I have worked with
               digital agencies and in-house teams, currently working for Drew+Rose as their Lead Developer.
             </h3><br></br>
-            <h3>Experience working with WordPress, Shopify, PHP, Next.JS and front-end web technologies.</h3>
+            <h3>I have experience working with WordPress, Shopify, PHP, Next.JS and front-end web technologies.</h3>
             <div className={styles.socialLinks}>
               <Link href="https://www.linkedin.com/in/alex-loughlin-806626124/" target="_blank" rel="noopener noreferrer">
                 LinkedIn

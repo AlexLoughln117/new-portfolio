@@ -184,7 +184,7 @@ a.secondary {
   width: 100%;
   margin: 0 auto;
     margin-bottom: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-weight: 900;
   font-size: 70px;
   line-height: .96;
@@ -210,7 +210,7 @@ a.secondary {
 }
 
 .socialLinks {
-  margin-top: 1rem; /* Add some space above the link */
+  margin-top: 2rem; /* Add some space above the link */
 }
 
 .socialLinks a {
@@ -263,6 +263,13 @@ a.secondary {
     max-width: 100%;
   }
   .homeIntro h2{
-    font-size: 60px;
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+  .homeIntro h3 {
+    font-size: 20px;
+  }
+  .socialLinks{
+    margin-top: 2.5rem;
   }
 }
