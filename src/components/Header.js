@@ -14,8 +14,8 @@ const Header = () => {
         </div>
         <nav className={styles.nav}>
           <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+            {/* <li><Link href="/">Home</Link></li>
+            <li><Link href="/blog">Blog</Link></li> */}
             { 
             /* <li><Link href="/bv-blog">BV</Link></li>
             <li><Link href="/category/work">Work</Link></li>

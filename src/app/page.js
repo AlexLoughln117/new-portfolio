@@ -9,11 +9,6 @@ export default function HomePage() {
     // Use the className from the CSS module for the main container
     <div className={styles.ctnHome}>
 
-      {/* Wrap the entire clickable intro area with the Next.js Link component */}
-      {/* The 'href' prop defines the destination URL */}
-      {/* <Link href="/category/work" className={styles.introLinkWrapper}> */}
-
-        {/* Use classNames for styling elements */}
         <div className={styles.articleIntro}>
           <div className={styles.homeIntro}>
             <h2>Hi, I&apos;m Alex Loughlin</h2>
@@ -28,21 +23,14 @@ export default function HomePage() {
                 LinkedIn
               </Link>
             </div>
-            {/* Apply specific styling to the link text if desired */}
             {/* <h3 className={styles.homeIntroLink}>
               See Work &gt; {}
             </h3> */}
           </div>
         </div>
-      {/* </Link> */}
+    
 
-      <RecentBlogs />
-
-      {/* You can add back other sections (like blog, books) here later */}
-      {/* Example: */}
-      {/* <div className={styles.someOtherSection}> */}
-      {/* <h2>Other Content</h2> */}
-      {/* </div> */}
+      {/* <RecentBlogs /> */}
 
     </div>
   );
