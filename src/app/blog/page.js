@@ -19,7 +19,7 @@ export default function BlogIndexPage() {
     <>
       <PageBanner
         title="Blog"
-        subtitle="Thoughts, updates, and articles."
+        subtitle="Thoughts, musings, and updates."
       />
 
       <div className={styles.blogContainer}>
