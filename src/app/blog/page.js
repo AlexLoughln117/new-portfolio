@@ -25,8 +25,9 @@ export default function BlogIndexPage() {
       <div className={styles.blogContainer}>
         <section className={styles.postsList}>
           {allPostsData && allPostsData.length > 0 ? (
-            allPostsData.map(({ slug, date, title, excerpt }) => (
+            allPostsData.map(({ slug, date, title, excerpt, tag }) => (
               <article key={slug} className={styles.postItem}>
+                {tag && <div className={styles.tag}>{tag}</div>}
                 <h2 className={styles.postTitle}>
                   <Link href={`/blog/${slug}`}>{title}</Link>
                 </h2>
