@@ -220,6 +220,7 @@ a.secondary {
   font-weight: normal;
   line-height: 1.22;
   font-size: 21px;
+  margin-right: 1.5rem;
 }
 
 .socialLinks a:hover {

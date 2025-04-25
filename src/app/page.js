@@ -13,12 +13,18 @@ export default function HomePage() {
           <div className={styles.homeIntro}>
             <h2>Hi, I&apos;m Alex Loughlin</h2>
             <h3>
-              A web developer with 10 years of experience in building and maintaining
-              beautiful and forward-thinking websites. I have worked with
-              digital agencies and in-house teams, currently working for Drew+Rose as their Lead Developer.
+            A Senior Web Developer with nearly 10 years of experience, specialising in
+              bridging technical development with client and project management.
+              With my unique experience, I can help bring efficiency and speed to any
+              digital team.</h3><br></br>
+            <h3>
+              I have experience working with digital agencies and in-house teams, currently working for Drew+Rose as their Lead Developer.
             </h3><br></br>
             <h3>I have experience working with WordPress, Shopify, PHP, Next.JS and front-end web technologies.</h3>
             <div className={styles.socialLinks}>
+            <Link href="/blog">
+                Work+Blog
+              </Link>
               <Link href="https://www.linkedin.com/in/alex-loughlin-806626124/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </Link>

@@ -55,9 +55,14 @@
     margin-top: 0;
     margin-bottom: 1.2em;
   }
+
+  .postContent img {
+    max-width: 100%;
+    height: auto;
+  }
   
   .postContent a {
-    color: #0070f3;
+    color: #000;
     text-decoration: underline;
   }
   .postContent a:hover {
