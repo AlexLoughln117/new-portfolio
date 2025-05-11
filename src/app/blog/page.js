@@ -1,19 +1,27 @@
 // src/app/blog/page.js
 import Link from 'next/link';
-import { getSortedPostsData } from '../../lib/posts'; // Adjust path if needed
-import PageBanner from '@/components/PageBanner'; // Reuse the banner
+import { getSortedPostsData } from '../../lib/posts';
+import PageBanner from '@/components/PageBanner';
+import BlogPostsClient from '@/components/BlogPostsClient';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'My Blog', // Set your desired blog title
+  title: 'My Blog',
+  description: 'Thoughts, musings, and updates on various topics.',
 };
 
-// This is a Server Component
-export default function BlogIndexPage() {
-  // Fetch metadata for all posts at build time / server side
-  // Note: getSortedPostsData uses sync fs methods, so page doesn't strictly need 'async'
-  // but keeping it async is fine for consistency with Server Components pattern.
+// This remains a Server Component
+// It now accepts searchParams to read URL query parameters
+export default function BlogIndexPage({ searchParams }) {
   const allPostsData = getSortedPostsData();
+
+  const allTags = allPostsData
+    .map(post => post.tag)
+    .filter(tag => tag);
+  const uniqueTags = [...new Set(allTags)];
+
+  // Get the initial tag from URL query params, e.g., /blog?tag=Work
+  const initialSelectedTag = searchParams?.tag || null;
 
   return (
     <>
@@ -21,33 +29,13 @@ export default function BlogIndexPage() {
         title="Blog"
         subtitle="Thoughts, musings, and updates."
       />
-
       <div className={styles.blogContainer}>
-        <section className={styles.postsList}>
-          {allPostsData && allPostsData.length > 0 ? (
-            allPostsData.map(({ slug, date, title, excerpt, tag }) => (
-              <article key={slug} className={styles.postItem}>
-                {tag && <div className={styles.tag}>{tag}</div>}
-                <h2 className={styles.postTitle}>
-                  <Link href={`/blog/${slug}`}>{title}</Link>
-                </h2>
-                <div className={styles.postMeta}>
-                  Published on: {new Date(date).toLocaleDateString('en-GB', {
-                    year: 'numeric', month: 'long', day: 'numeric'
-                  })}
-                </div>
-                <p className={styles.postExcerpt}>{excerpt}</p>
-                <Link href={`/blog/${slug}`} className={styles.readMore}>
-                  Read More &rarr;
-                </Link>
-              </article>
-            ))
-          ) : (
-            <p>No blog posts published yet.</p>
-          )}
-        </section>
+        <BlogPostsClient
+          initialPosts={allPostsData}
+          tags={uniqueTags}
+          initialSelectedTag={initialSelectedTag} // Pass the tag from URL
+        />
       </div>
     </>
   );
 }
-

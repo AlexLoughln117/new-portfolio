@@ -22,9 +22,7 @@ export default function HomePage() {
             </h3><br></br>
             <h3>I have experience working with WordPress, Shopify, PHP, Next.JS and front-end web technologies.</h3>
             <div className={styles.socialLinks}>
-            <Link href="/blog">
-                Work+Blog
-              </Link>
+              <Link href="/blog?tag=Work">Work</Link>
               <Link href="https://www.linkedin.com/in/alex-loughlin-806626124/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </Link>

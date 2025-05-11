@@ -80,4 +80,33 @@
     text-decoration: underline;
   }
   
-  
+  .tagFilterContainer {
+  margin-bottom: 5rem; /* Or use var(--space-md) if you have global spacing vars */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Or use var(--space-xs) */
+  justify-content: left; /* Or left, as you prefer */
+}
+
+.tagFilterButton {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333; /* Dark text */
+  border: 1px solid #ddd; /* Light border */
+  padding: 0.5em 1em;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tagFilterButton:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tagFilterButton.activeTag {
+  background-color: #44b6e7; /* Example active color (Next.js blue) */
+  color: white;
+  border-color: #44b6e7;
+  font-weight: bold;
+}
