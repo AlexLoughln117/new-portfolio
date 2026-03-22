@@ -1,0 +1,97 @@
+/* Shared Case Study Card Grid */
+.csCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.csCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.csCard:hover {
+  border-color: var(--accent-purple);
+  transform: translateY(-2px);
+}
+
+/* Gradient placeholder thumbnail */
+.csThumb {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(155, 89, 208, 0.2);
+}
+
+/* Image-based thumbnail */
+.csThumbImg {
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  background: var(--background-alt);
+}
+
+/* Per-project gradient colours */
+.csThumbPH { background: linear-gradient(135deg, #dce8f8, #e8dcf4); }
+.csThumbAL { background: linear-gradient(135deg, #dde4f4, #ecddf8); }
+.csThumbBV { background: linear-gradient(135deg, #f0e8e2, #e8ddf4); }
+.csThumbRS { background: linear-gradient(135deg, #dde0f4, #e4dcf8); }
+.csThumbCN { background: linear-gradient(135deg, #f4e8dc, #f0dce8); }
+.csThumbTTN { background: linear-gradient(135deg, #dcf4e8, #dce8f4); }
+.csThumbBK { background: linear-gradient(135deg, #f4f0dc, #f4e4dc); }
+.csThumbPL { background: linear-gradient(135deg, #dce8e4, #e0dce8); }
+.csThumbML { background: linear-gradient(135deg, #f0e8dc, #e8dcdc); }
+.csThumbMOL { background: linear-gradient(135deg, #d8e6f0, #dce0f8); }
+
+.csCardBody {
+  padding: 1.5rem;
+}
+
+.csTag {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-blue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.csCardBody h3 {
+  font-size: 1.15rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.csCardBody p {
+  font-size: 0.85rem;
+  color: var(--foreground-muted);
+  line-height: 1.6;
+}
+
+.csArrow {
+  color: var(--accent-blue);
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  display: inline-block;
+}
+
+.viewMore {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .csCards {
+    grid-template-columns: 1fr;
+  }
+}

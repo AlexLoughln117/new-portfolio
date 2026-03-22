@@ -1,0 +1,66 @@
+/* Contact Page */
+.contactPage {
+  text-align: center;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contactContent {
+  max-width: 500px;
+}
+
+.contactContent h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.contactContent p {
+  font-size: 1rem;
+  color: var(--foreground-muted);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: var(--foreground);
+  transition: border-color 0.2s;
+}
+
+.contactItem:hover {
+  border-color: var(--accent-purple);
+}
+
+.contactIcon {
+  color: var(--accent-purple);
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.contactDetails {
+  text-align: left;
+}
+
+.contactLabel {
+  font-size: 0.8rem;
+  color: var(--foreground-muted);
+}
+
+.contactValue {
+  font-size: 0.95rem;
+  color: var(--accent);
+}

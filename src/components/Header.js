@@ -1,29 +1,37 @@
 // src/components/Header.js
+'use client';
+
 import Link from 'next/link';
-import styles from './Header.module.css'; // We'll create this CSS file next
+import { usePathname } from 'next/navigation';
+import styles from './Header.module.css';
 
 const Header = () => {
+  const pathname = usePathname();
+
+  const isActive = (path) => {
+    if (path === '/') return pathname === '/';
+    return pathname.startsWith(path);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.logo}>
-          {/* Link the logo back to the homepage */}
-          <Link href="/">
-            AVL {/* Or use an <Image> component if you have a logo file */}
-          </Link>
-        </div>
+        <Link href="/" className={styles.logo}>
+          AVL
+        </Link>
         <nav className={styles.nav}>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/blog?tag=Work">Work</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            { 
-            /* <li><Link href="/bv-blog">BV</Link></li>
-            <li><Link href="/category/work">Work</Link></li>
-            <li><Link href="/games">Games</Link></li>
-            <li><Link href="/books">Books</Link></li>
-            <li><Link href="/blog">Blog</Link></li> */}
-          </ul>
+          <Link href="/" className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}>
+            Home
+          </Link>
+          <Link href="/case-studies" className={`${styles.navLink} ${isActive('/case-studies') ? styles.active : ''}`}>
+            Case Studies
+          </Link>
+          <Link href="/about" className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`}>
+            About
+          </Link>
+          <Link href="/contact" className={`${styles.navLink} ${isActive('/contact') ? styles.active : ''}`}>
+            Contact
+          </Link>
         </nav>
       </div>
     </header>
