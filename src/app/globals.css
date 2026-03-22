@@ -53,6 +53,12 @@ a {
   padding: 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
