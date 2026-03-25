@@ -18,6 +18,9 @@ export const metadata = {
     default: 'Alex Loughlin | Client & Project Lead',
   },
   description: 'Senior Client & Project Lead with 10 years in digital — from web builds and performance marketing to account strategy and team coordination.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
