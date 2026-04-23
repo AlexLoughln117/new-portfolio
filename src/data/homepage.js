@@ -2,13 +2,13 @@
 // Used by: Hero, WhatIDo, and Stats components.
 
 export const hero = {
-  headline: 'I bridge the gap between',
-  headlineAccent: 'clients and delivery.',
+  headline: 'I build websites and',
+  headlineAccent: 'lead digital projects.',
   subtitle:
-    'Senior Client & Development Lead with 10 years experience in digital marketing. From web builds and performance marketing to account strategy and team coordination.',
+    '10 years building and delivering web projects. From writing code, to leading dev teams and co-ordinating teams across development, design and digital marketing. All while keeping clients happy and projects running smoothly.',
   intro: [
-    'I manage client accounts end-to-end at Drew+Rose, a full-service marketing agency. My clients have included Conde Nast, M&G Investments, Mayor of London, GLA and Lambeth Council.',
-    'My background in full-stack web development means I can scope realistically, make informed decisions in meetings, and optimise both the build and the campaigns driving traffic to it.',
+    'Currently I lead web development and digital delivery across a portfolio of accounts at Drew+Rose. My clients have included Cond\u00e9 Nast, M&G Investments, Mayor of London and Lambeth Council.',
+    'That technical foundation means I scope realistically, make informed decisions in meetings, and bridge the gap between what clients need and what gets built.',
   ],
   ctas: [
     { label: 'View my work', href: '/case-studies', style: 'primary' },
@@ -18,25 +18,25 @@ export const hero = {
 
 export const whatIDo = {
   label: 'What I Do',
-  heading: 'Three pillars of digital delivery',
+  heading: 'How I deliver digital projects',
   pillars: [
+    {
+      icon: '\u{2699}',
+      title: 'Web Development & Technical Delivery',
+      description:
+        'I build websites in WordPress, Shopify, and Next.js. I lead dev teams, own technical scoping and architecture, and stay hands-on with the code throughout the build.',
+    },
     {
       icon: '\u{1F91D}',
       title: 'Client & Account Management',
       description:
-        'I own client relationships from onboarding to ongoing delivery. Strategic planning, stakeholder communications, monthly reporting, and making sure every project aligns with what the client actually needs.',
-    },
-    {
-      icon: '\u{2699}',
-      title: 'Project & Technical Delivery',
-      description:
-        'With a decade of hands-on development behind me, I lead projects from scoping and specification through to launch. I coordinate teams, manage timelines, and stay close enough to the code to know when something is off track.',
+        'I run client relationships from onboarding to ongoing delivery. Strategic planning, stakeholder communications, monthly reporting, and making sure every project aligns with what the client actually needs.',
     },
     {
       icon: '\u{1F4C8}',
-      title: 'Performance Marketing',
+      title: 'Digital Marketing',
       description:
-        'I plan and manage paid media campaigns across Meta and Google Ads \u2014 lead generation funnels, subscription marketing, and ongoing optimisation. Strategy, setup, reporting, and everything in between.',
+        'I co-ordinate between paid media teams, design and the client to deliver campaigns across Meta and Google Ads. Lead generation funnels, subscription marketing, and ongoing optimisation.',
     },
   ],
 };
@@ -46,7 +46,7 @@ export const aboutIntro = {
   image: '/images/alex-headshot.jpg',
   paragraphs: [
     'I started my career as a front-end developer, spending seven years building websites in WordPress, Shopify, and Next.js. Along the way I took on more responsibility. First leading development teams, then managing client relationships, and eventually owning entire accounts end-to-end.',
-    'That progression is what makes me different from a traditional account manager or project manager. I\u2019ve written the code, managed the servers, and debugged the build. So when I\u2019m in a client meeting, I can give a confident, informed answer about what\u2019s possible, what\u2019s realistic, and what\u2019s going to cause problems \u2014 without needing to go back to the dev team.',
+    'That progression is what sets me apart. I\u2019ve done the work, so I know what\u2019s realistic, what\u2019s going to cause problems, and how to keep a project on track.',
   ],
 };
 

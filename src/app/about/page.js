@@ -5,7 +5,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'About',
-  description: 'A senior client and project lead with 10 years of experience across web development, performance marketing, and account management.',
+  description: 'Full-stack web developer turned digital director with 10 years building and delivering web projects.',
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className={styles.nowSection}>
         <div className={styles.nowInner}>
           <h2>What I Do Now</h2>
-          <p>I manage a portfolio of 4&ndash;6 client accounts at Drew+Rose, a full-service marketing agency in London. My work spans three areas: client and account management, project and technical delivery, and performance marketing across various channels including Meta and Google Ads.</p>
+          <p>I lead web development and digital delivery across a portfolio of 4&ndash;6 accounts at Drew+Rose, a full-service marketing agency in London. I&apos;m hands-on with code on key builds while running client relationships and co-ordinating teams across development, design and digital marketing.</p>
         </div>
       </section>
 
@@ -28,13 +28,13 @@ export default function AboutPage() {
           <div className={styles.timeline}>
             <div className={styles.timelineItem}>
               <div className={styles.timelineYear}>2025</div>
-              <div className={styles.timelineRole}>Senior Client Lead &amp; Developer</div>
-              <div className={styles.timelineCompany}>Drew+Rose &mdash; Full account ownership, performance marketing, team coordination</div>
+              <div className={styles.timelineRole}>Digital Director &amp; Senior Developer</div>
+              <div className={styles.timelineCompany}>Drew+Rose &mdash; Web development, digital delivery, client relationships, team co-ordination</div>
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineYear}>2022</div>
               <div className={styles.timelineRole}>Senior Web Developer</div>
-              <div className={styles.timelineCompany}>Drew+Rose &mdash; Team of 3, technical scoping, increasingly client-facing</div>
+              <div className={styles.timelineCompany}>Drew+Rose &mdash; Team of 4, technical scoping, increasingly client-facing</div>
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineYear}>2021</div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
         </div>
         <div className={styles.ctaCol}>
           <h2>Get in Touch</h2>
-          <p>I&apos;m currently exploring new opportunities where I can continue bridging client strategy, technical delivery, and performance marketing. If you think I&apos;d be a good fit for your team, I&apos;d love to hear from you.</p>
+          <p>I&apos;m currently exploring new opportunities where I can combine technical delivery with client and account leadership. If you think I&apos;d be a good fit for your team, I&apos;d love to hear from you.</p>
           <div className={styles.ctaWrapper}>
             <Link href="/contact" className="btn btn-primary">Contact me</Link>
           </div>

@@ -6,7 +6,7 @@ const caseStudies = [
   {
     slug: 'property-hub',
     title: 'Property Hub',
-    tag: 'Account Management + Performance Marketing + Web Build',
+    tag: 'Web Build + Account Management',
     description: '5 lead generation funnels across Meta, Google Ads, Reddit and LinkedIn. Exceeded annual target by 104%.',
     client: 'Performance Marketing (Lead Generation), Account Management, Web build.',
     gradientClass: 'csThumbPH',
@@ -25,7 +25,7 @@ const caseStudies = [
   {
     slug: 'mayor-of-london-homes',
     title: 'Mayor of London Homes',
-    tag: 'Account Management + Website Build',
+    tag: 'Website Build + Account Management',
     description: 'End-to-end delivery of a custom WordPress site for the Mayor\'s Office. Passed third-party pen testing and WCAG 2.2 accessibility.',
     client: 'Mayor of London — Account Management + Website Build',
     gradientClass: 'csThumbMOL',
@@ -44,7 +44,7 @@ const caseStudies = [
   {
     slug: 'bond-vigilantes',
     title: 'Bond Vigilantes',
-    tag: 'Account Management + Web Build',
+    tag: 'Web Build + Account Management',
     description: '7-year client relationship. Complex AEM to WordPress migration restoring 17 years of content.',
     client: 'M&G Investments — Account Management + Web Build',
     gradientClass: 'csThumbBV',
@@ -61,7 +61,7 @@ const caseStudies = [
   {
     slug: 'active-lambeth',
     title: 'Active Lambeth',
-    tag: 'Account Management + Web Build + Performance Marketing',
+    tag: 'Web Build + Account Management',
     description: 'From dev lead to full account owner. 175-page site in 4 weeks, then full-funnel subscription marketing.',
     client: 'Lambeth Council — Web Build + Subscription Marketing',
     gradientClass: 'csThumbAL',
@@ -86,7 +86,7 @@ const caseStudies = [
   {
     slug: 'conde-nast',
     title: 'Cond\u00e9 Nast',
-    tag: 'Account Management + Performance Marketing',
+    tag: 'Account Management',
     description: 'Subscription growth campaigns across Vogue, Wired, GQ, Tatler and more. 16% conversion rate on seasonal campaigns.',
     client: 'Cond\u00e9 Nast — Account Management + Performance Marketing',
     gradientClass: 'csThumbCN',
@@ -104,7 +104,7 @@ const caseStudies = [
   {
     slug: 'reside',
     title: 'Reside Worldwide',
-    tag: 'Account Management + Web Build',
+    tag: 'Web Build + Account Management',
     description: 'Full website build delivered in a record 2 weeks, managing client, external agency, and developer.',
     client: 'Apart-Hotel Brand — Project Management + Web Build',
     gradientClass: 'csThumbRS',
@@ -122,7 +122,7 @@ const caseStudies = [
   {
     slug: 'tutor-the-nation',
     title: 'Tutor the Nation',
-    tag: 'Development Lead + Web Build',
+    tag: 'Web Build + Development Lead',
     description: 'Full rebrand and website build for a Gen Z education charity. Led a team of 3 developers, delivered under budget and on schedule.',
     client: 'Tutor the Nation — Development Lead + Web Build',
     gradientClass: 'csThumbTTN',
@@ -146,7 +146,7 @@ const caseStudies = [
   {
     slug: 'pitch-level',
     title: 'PitchLevel',
-    tag: 'Development Lead + Web Build',
+    tag: 'Web Build + Development Lead',
     description: 'New brand and website for a luxury hospitality sporting events platform. From brief to launch in 12 weeks.',
     client: 'PitchLevel — Development Lead + Web Build',
     gradientClass: 'csThumbPL',
@@ -164,7 +164,7 @@ const caseStudies = [
   {
     slug: 'molten',
     title: 'Molten',
-    tag: 'Development Lead + eCommerce Build',
+    tag: 'eCommerce Build + Development Lead',
     description: 'Luxury Shopify eCommerce site for a hand-blown glass lighting brand. Built to scale with the product range.',
     client: 'Laura Elizabeth Glass — Development Lead + eCommerce Build',
     gradientClass: 'csThumbML',
@@ -182,7 +182,7 @@ const caseStudies = [
   {
     slug: 'blakademik',
     title: 'Blakademik',
-    tag: 'Development Lead + Web Build',
+    tag: 'Web Build + Development Lead',
     description: 'Full brand identity and WordPress website for an online show giving Black individuals a space to debate current affairs.',
     client: 'Blakademik — Development Lead + Web Build',
     gradientClass: 'csThumbBK',

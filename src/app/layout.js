@@ -15,9 +15,9 @@ const roboto = Roboto({
 export const metadata = {
   title: {
     template: '%s | Alex Loughlin',
-    default: 'Alex Loughlin | Client & Project Lead',
+    default: 'Alex Loughlin | Web Development & Digital Delivery',
   },
-  description: 'Senior Client & Project Lead with 10 years in digital — from web builds and performance marketing to account strategy and team coordination.',
+  description: 'Full-stack web developer turned digital director with 10 years building and delivering web projects.',
   icons: {
     icon: '/favicon.svg',
   },
